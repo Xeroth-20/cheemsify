@@ -1,0 +1,131 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    min-width: 325px;
+}
+
+body {
+    font-family: "Roboto", "sans-serif";
+}
+
+.root {
+    background-color: #efefef;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.jx-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    padding-top: 128px;
+    padding-left: 15px;
+    padding-bottom: 32px;
+    padding-right: 15px;
+    height: 100%;
+
+    /* Animation */
+    animation: fadeIn 0.3s;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: 3px 3px 6px rgba(000, 000, 000, 0.24);
+    padding: 24px 16px;
+    min-width: 295px;
+    max-width: 425px;
+    width: 100%;
+}
+
+.box__header {
+    margin-bottom: 24px;
+}
+
+.title {
+    color: #6034a3;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.input-box {
+    margin-bottom: 24px;
+}
+
+.label-txt {
+    color: rgba(000, 000, 000, 0.64);
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.txt-to-convert {
+    border: none;
+    border-bottom: 3px solid #6034a3;
+    color: rgba(000, 000, 000, 0.74);
+    font-size: 16px;
+    line-height: 1.5em;
+    outline: none;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.jx-btn {
+    background-color: #0a86f2;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    line-height: 2.5em;
+    transition: background-color 0.3s;
+    outline: none;
+    width: 100%;
+}
+
+.result-header {
+    display: flex;
+}
+
+.label-result {
+    color: rgba(000, 000, 000, 0.64);
+    font-size: 16px;
+    margin-right: auto;
+}
+
+.img-wrap {
+    cursor: pointer;
+}
+
+.copy-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.jx-result {
+    color: rgba(000, 000, 000, 0.74);
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.jx-btn:hover {
+    background-color: #36a4ff;
+}
+
+.jx-copyright {
+    color: rgba(000, 000, 000, 0.54);
+}
