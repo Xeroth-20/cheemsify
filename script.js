@@ -26,7 +26,7 @@ const init = () => {
     };
 
 
-    jxText.addEventListener('keydown', () => {
+    jxText.addEventListener('keydown', ($event) => {
         if ($event.keyCode == 13) {
             asignText();
         } 

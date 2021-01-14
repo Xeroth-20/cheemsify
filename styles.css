@@ -31,7 +31,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-flow: column;
-    padding: 96px 15px 26px 15px;
+    padding: 48px 15px 26px 15px;
 
     /* Animation */
     animation: fadeIn 0.3s;
@@ -168,3 +168,10 @@ body {
     width: 32px;
     height: 32px;
 }
+
+/* media queries */
+@media screen and (min-width: 480px) {
+    .jx-container {
+        padding: 96px 15px 26px 15px;
+    }
+} 
