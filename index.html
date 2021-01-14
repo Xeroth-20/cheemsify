@@ -2,44 +2,74 @@
 <html lang="es">
 
 <head>
+    
+    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon-32x32.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- stylesheets -->
     <link rel="stylesheet" href="bootstrap-grid.min.css" type="text/css">
     <link rel="stylesheet" href="styles.css" type="text/css">
+    
     <title>Cheemsify</title>
+
 </head>
 
-<body>
-    <div class="root">
-        <div class="jx-container">
-            <div class="box">
-                <div class="box__header">
-                    <h1 class="title">CHEEMSIFY</h1>
-                </div>
-                <div class="input-box">
-                    <label class="label-txt" for="txt">Ingresa el texto a convertir:</label>
-                    <input id="txt" class="txt-to-convert" type="text">
-                    <button class="jx-btn">Cheemsificar</button>
-                </div>
-                <div class="box__result">
-                    <div class="result-header">
-                        <span class="label-result">Resultado:</span>
-                        <div class="img-wrap">
-                            <img class="copy-icon" src="assets/copy-icon.svg" alt="Copy icon">
+<body class="root">
+    
+    <div class="jx-container">
+
+        <div class="box">
+            <div class="box__header">
+                <h1 class="title">CHEEMSIFY</h1>
+            </div>
+            <div class="box__input">
+                <label class="label-txt" for="txt">Ingresa el texto a convertir:</label>
+                <input id="txt" class="txt-to-convert" type="text" placeholder="Contexto él tenia una...">
+                <button class="jx-btn">Cheemsificar</button>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="box__result">
+                <div class="result-header">
+                    <span class="result__label">Resultado:</span>
+                    <div class="result__options">
+                        <div class="icon-option clean-option" title="Borrar resultado">
+                            <img class="icon" src="assets/sweeping-icon.svg" alt="Clean icon">
+                        </div>
+                        <div class="icon-option copy-option" title="Copiar al portapapeles">
+                            <img class="icon" src="assets/copy-icon.svg" alt="Copy icon">
                         </div>
                     </div>
-                    <p class="jx-result">Conmtemxtom eml temniam umna...</p>
                 </div>
+                <p class="result-body">Contemxtom éml teniam unam...</p>
             </div>
-            <footer class="jx-footer">
-                <span class="jx-copyright">Creado por Xeroth20</span>
-            </footer>
         </div>
+
+        <footer class="jx-footer">
+            <div class="copyright">Creado por Jhonatan Castillo</div>
+            <div class="author-link-list">
+                <a class="author-link facebook-icon" href="https://www.facebook.com/FriedAvocado/" target="_blank">
+                    <img class="author-icon" src="assets/facebook.svg" alt="Facebook icon">
+                </a>
+                <a class="author-link github-icon" href="https://github.com/Xeroth-20" target="_blank">
+                    <img class="author-icon" src="assets/github.svg" alt="Github icon">
+                </a>
+            </div>
+        </footer>
+
     </div>
 
+    <!-- scritps -->
     <script type="text/javascript" src="script.js"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 const cheemsify = (text) => {
-    return text.replace(/[aáeéiíoóuú]+[^mnaáeéiíoóuú]/gi, (value) => {
+    return text.replace(/[aáeéiíoóuú]+[^aáeéiíoóuúmnñry]/gi, (value) => {
         const pre = value.slice(0, value.length - 1);
         const post = value[value.length - 1];
         
@@ -8,24 +8,35 @@ const cheemsify = (text) => {
 };
 
 const init = () => {
+    const defaultValue = 'Contemxtom éml teniam unam...';
     const jxText = document.querySelector('#txt');
     const jxBtn = document.querySelector('.jx-btn');
-    const jxResult = document.querySelector('.jx-result');
-    const imgWrap = document.querySelector('.img-wrap');
+    const jxResult = document.querySelector('.result-body');
+    const cleanButton = document.querySelector('.clean-option');
+    const copyButton = document.querySelector('.copy-option');
+    
+    const cleanText = () => {
+        jxText.value = null;
+        jxResult.innerText = defaultValue;
+    };
+
     const asignText = () => {
-        const text = jxText.value || 'Conmtemxtom eml temniam umna...';
+        const text = jxText.value || defaultValue;
         jxResult.innerText = cheemsify(text);
     };
 
-    jxText.addEventListener('keydown', ($event) => {
+
+    jxText.addEventListener('keydown', () => {
         if ($event.keyCode == 13) {
             asignText();
         } 
     });
-    jxBtn.addEventListener('click', ($event) => {
-        asignText();
-    });
-    imgWrap.addEventListener('click', ($event) => {
+
+    jxBtn.addEventListener('click', asignText);
+
+    cleanButton.addEventListener('click', cleanText);
+
+    copyButton.addEventListener('click', () => {
         navigator.clipboard.writeText(jxResult.innerText);
     });
 };
