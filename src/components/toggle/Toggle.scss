@@ -1,0 +1,61 @@
+/* Variables */
+@import './../../scss/variables';
+
+.toggle {
+    > input {
+        display: none;
+    }
+
+    > .no-toggle-container > .toggle-col:first-child {
+        display: none;
+    }
+
+    > .toggle-container {
+        align-items: center;
+        display: flex;
+
+        margin: 0 -5px;
+    }
+
+    > .toggle-container > .toggle-col {
+        padding: 0 5px;
+    }
+
+    .toggle-name {
+        color: $dark-color-two;
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    .toggle-btn {
+        background-color: $background-color-var;
+        border-radius: 26px;
+        cursor: pointer;
+        display: block;
+        transition: background-color 0.3s;
+
+        padding: 4px;
+        width: 52px;
+        height: 26px;
+
+        &::before {
+            background-color: #fff;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            transition: all 0.3s;
+            
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .toggle-btn.active {
+        background-color: $primary-color;
+        
+        &::before {
+            background-color: $secondary-color-var;
+            transform: translateX((52px - 8px) - 18px);
+        }
+    }
+}

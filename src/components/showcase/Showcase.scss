@@ -1,0 +1,88 @@
+/* Variables */
+@import './../../scss/variables';
+
+.showcase {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1080px) {
+        margin-bottom: 48px;
+    }
+
+    .showcase-header {
+        margin-bottom: 16px;
+    }
+
+    .showcase-header > .title {
+        color: $light-color-one;
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 1.5em;
+        
+        margin: 0;
+    }
+
+    .showcase-body {
+        margin-bottom: 16px;
+    }
+
+    .showcase-container:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .showcase-container.top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        > :not(:last-child) {
+           margin-bottom: 16px; 
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+
+            > :not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .showcase-container.bottom {
+        display: flex;
+
+        @media screen and (min-width: 768px) {
+            justify-content: flex-end;
+        }
+    }
+
+    .showcase-action-group {
+        background-color: $background-color;
+        border-radius: 4px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .showcase-action-item {
+        align-items: center;
+        color: $dark-color-two;
+        cursor: pointer;
+        display: flex;
+        font-size: 15px;
+        white-space: nowrap;
+
+        transition: all 0.3s;
+
+        padding: 8px 12px;
+        height: 40px;
+
+        &:hover {
+            background-color: $background-color-var;
+            color: $dark-color-one;
+        }
+    }
+}

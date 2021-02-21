@@ -1,0 +1,100 @@
+/* Variables */
+@import "./../../scss/variables";
+
+.cheemsify-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px $dark-color-four;
+    display: block;
+
+    padding: 24px 16px;
+    max-width: 425px;
+    width: 100%;
+
+    animation: 0.3s fadeIn;
+
+    .form-header {
+        margin-bottom: 16px;
+    }
+
+    .form-header-title {
+        color: $primary-color;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+        margin: 0;
+    }
+
+    .form-control-container:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .form-control-container > label {
+        display: block;
+        color: $dark-color-two;
+        font-size: 14px;
+        line-height: 1.5em;
+
+        margin-bottom: 6px;
+    }
+
+    .form-control-container > input[type="text"].form-control {
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 1px $dark-color-three;
+        color: $dark-color-three;
+        display: block;
+        font-size: 16px;
+        line-height: 1.5em;
+        outline: none;
+        transition: color 0.3s;
+
+        padding: 0.35em 0.75em;
+        width: 100%;
+
+        &:focus {
+            color: $dark-color-one;
+        }
+    }
+
+    .form-result-header {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 12px;
+    }
+
+    .result-header-title {
+        color: $dark-color-two;
+        font-size: 16px;
+        font-weight: normal;
+
+        margin: 0;
+    }
+
+    .form-option-group {
+        background-color: $background-color;
+        border-radius: 8px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .form-option-icon {
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        padding: 8px 12px;
+
+        &:hover {
+            background-color: $background-color-var;
+        }
+    }
+
+    .form-option-icon > .icon {
+        vertical-align: middle;
+
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -1,0 +1,69 @@
+/* Variables */
+@import "./../../scss/variables";
+
+.pagination {
+    display: flex;
+
+    height: 40px;
+    
+    .pagination-index {
+        align-items: center;
+        display: flex;
+        color: $light-color-two;
+        order: 1;
+        white-space: nowrap;
+
+        @media screen and (min-width: 768px) {
+            order: 0;
+            margin-right: 12px;
+        }
+    }
+
+    .pagination-button-group {
+        background-color: $background-color;
+        border-radius: 4px;
+        display: flex;
+        overflow: hidden;
+
+        margin-right: 12px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 0;
+        }
+    }
+
+    .btn-prev, .btn-next {
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        padding: 8px 12px;
+        
+        > .btn-icon {
+            vertical-align: middle;
+
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover {
+            background-color: $background-color-var;
+        }
+    }
+    
+    .pagination-input {
+        background-color: #fff;
+        border: none;
+        color: $dark-color-three;
+        font-size: 16px;
+        line-height: 1.5em;
+        outline: none;
+        transition: color 0.3s;
+        
+        padding: 0.35em 0.75em;
+        width: 96px;
+
+        &:focus {
+            color: $dark-color-one;
+        }
+    }
+}

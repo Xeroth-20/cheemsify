@@ -1,0 +1,27 @@
+/* Variables */
+@import './../../scss/variables';
+
+.cheemsify-card {
+    background-color: $light-color-four;
+    border-radius: 8px;
+
+    padding: 24px 16px;
+    height: 160px;
+
+    animation: 0.3s fadeIn;
+
+    .card-date {
+        color: $light-color-one;
+    }
+
+    .cheemsified-text {
+        color: $light-color-one;
+        display: -webkit-box;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        margin-bottom: 0;
+    }
+}
