@@ -40,9 +40,8 @@ export const CheemsifyForm = (props) => {
 
     const validateForm = (text) => {
         const minlength = 1;
-        const maxlength = 1000;
 
-        return minlength <= text.trim().length && maxlength >= text.trim().length;
+        return minlength <= text.trim().length;
     };
 
     const assignResult = () => {
