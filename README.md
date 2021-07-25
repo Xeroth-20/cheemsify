@@ -1,7 +1,7 @@
-# CHEEMSIFY REACT APP
-Aplicación web hecha en `ReactJS`.
+# CHEEMSIFY
+Aplicación web hecha en `React`.
 
-Cheemsifica tus textos y visualiza las ultimas traducciones hechas :). Visita el sitio web [aquí](https://cheemsify.vercel.app/).
+Cheemsifica tus textos y visualiza las ultimas traducciones hechas. Visita el sitio web [aquí](https://cheemsify.vercel.app/).
 
 ![cheemsify](https://user-images.githubusercontent.com/64508119/108613847-a8a2f180-73c3-11eb-99cc-814c6cbee886.png)
 
